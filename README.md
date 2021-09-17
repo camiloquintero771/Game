@@ -1,24 +1,22 @@
-# Inventory 
-It's a project for small and medium-sized companies that need to keep track of all their products    
+# PICAS Y FIJAS
+Este es un proyecto para el desarrollo del juego PICAS y FIJAS
     
 ## Initial setup    
  You must create a file in the root of the project with the name .env with the following data:    
     
     #Django
-    DEBUG=False      
-    SECRET_KEY=g-d^%97w4jgu_+2fzo&io3^tqq71315vv8kv80%%_xm#aqx38g      
-    TZ=America/Bogota      
-    DJANGO_SETTINGS_MODULE=inventory.settings.local      
-          
-    #Postgres      
-    POSTGRES_DB=inventory_db      
-    POSTGRES_USER=inventory_user      
-    POSTGRES_PASSWORD=inventory2021**.      
-    POSTGRES_HOST=postgres      
-    POSTGRES_PORT=5432      
-          
-    #Redis      
-    REDIS_URL=redis://redis:6379/0    
+    DEBUG=True
+    SECRET_KEY=a2yvfghss3w(3tm)$3p_(*r1k$0u@hpp^^w8@9%1x(&e=_mu==
+    TZ=America/Bogota    
+    DJANGO_SETTINGS_MODULE=Game.settings
+        
+    #Postgres    
+    POSTGRES_DB=Game_db
+    POSTGRES_USER=Game_user
+    POSTGRES_PASSWORD=Game2021**.
+    POSTGRES_HOST=postgres    
+    POSTGRES_PORT=5432
+
  Then you must run the following command to build all the project containers:    
     
  $ make build    
@@ -36,13 +34,14 @@ Finally you should generate the initial Django migrations, for them execute the 
  2. **Generate migrations:** make migrate    
  3. **Create a superuser:** make superuser  
   
-## Test Environment  
-  
-In the following url you will be able to carry out tests in a secure environment, with the following superuser:  
-[Inventory - Test Environment URL](https://inventory-enodev.herokuapp.com/)  
-  
- - **User:** root  
- - **Password:** 3n0cd3v
+## Instrucciones de uso
+
+para ingresar los datos correctamente el url debe quedar de la siguiten forma:
+
+http://0.0.0.0:8000/juego/numero
+
+donde número es el número que usted, desea ingresar
+
 
 ## Sort packages in the requirements.txt file
 
