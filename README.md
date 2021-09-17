@@ -1,7 +1,7 @@
 # PICAS Y FIJAS
 Este es un proyecto para el desarrollo del juego PICAS y FIJAS
     
-## Initial setup    
+## Configuración inicial   
  You must create a file in the root of the project with the name .env with the following data:    
     
     #Django
@@ -23,12 +23,12 @@ Este es un proyecto para el desarrollo del juego PICAS y FIJAS
 Finally you should generate the initial Django migrations, for them execute the following command    
     
  $ make migrate    
-## Run project    
+## Inicar el proyecto   
  To run the project you must execute the following command    
     
  $ make up    
 > If you have problems connecting Django with Postgres, you should run the command: make restart CONTAINER=django    
- ## Other commands    
+ ## Otros comandos    
     
  1. **Create a new app:** make startapp NAME=example    
  2. **Generate migrations:** make migrate    
